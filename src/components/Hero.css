@@ -1,0 +1,145 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+#vuca-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Marquee styles */
+.marquee-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.marquee-img {
+  height: 300px;
+  width: auto;
+  border-radius: 10px;
+  filter: grayscale(100%) blur(2px);
+  transition: filter 0.3s;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+}
+
+.hero-title {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+
+.ted-red {
+  color: var(--ted-red);
+}
+
+.theme-wrapper {
+  margin: 1rem 0;
+}
+
+.hero-theme {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(255,255,255,0.3);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-theme:hover, .hero-theme:active {
+  animation: glitch-anim 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+.hero-date {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.hero-actions {
+  margin-top: 2rem;
+}
+
+.btn-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(230, 43, 30, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(230, 43, 30, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(230, 43, 30, 0); }
+}
+
+@keyframes glitch-anim {
+  0% { transform: translate(0) }
+  20% { transform: translate(-2px, 2px) }
+  40% { transform: translate(-2px, -2px) }
+  60% { transform: translate(2px, 2px) }
+  80% { transform: translate(2px, -2px) }
+  100% { transform: translate(0) }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+  .hero-theme {
+    font-size: 2rem;
+  }
+  .marquee-img {
+    height: 150px;
+  }
+}

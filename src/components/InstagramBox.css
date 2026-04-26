@@ -1,0 +1,78 @@
+.insta-section {
+  background-color: #050505;
+  padding: 4rem 0;
+}
+
+.insta-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background: linear-gradient(135deg, rgba(230, 43, 30, 0.1) 0%, rgba(25, 25, 25, 0.6) 100%);
+  border-color: rgba(230, 43, 30, 0.2);
+}
+
+.insta-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.insta-icon-wrapper {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(220, 39, 67, 0.3);
+}
+
+.insta-icon {
+  color: white;
+}
+
+.insta-title {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.insta-handle {
+  color: var(--ted-red);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.insta-desc {
+  color: var(--text-muted);
+  max-width: 500px;
+}
+
+.insta-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 2px solid var(--ted-red);
+  box-shadow: none;
+}
+
+.insta-btn:hover {
+  background-color: var(--ted-red);
+  box-shadow: 0 5px 15px var(--ted-red-glow);
+}
+
+@media (max-width: 768px) {
+  .insta-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .insta-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
