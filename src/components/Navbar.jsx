@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { Download } from 'lucide-react';
+import kctLogo from '../assets/KCT.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,9 +28,9 @@ const Navbar = () => {
             <span className="ted-red">TEDx</span>KCT
           </a>
           <div className="nav-divider"></div>
-          <a href="https://kct.ac.in/" target="_blank" rel="noreferrer" className="nav-kct-logo-wrap">
-            <img src="/KCT.png" alt="KCT Logo" className="nav-kct-logo" />
-            <span className="nav-kct-text">Kumaraguru College of Technology</span>
+          <a href="https://kct.ac.in" target="_blank" rel="noreferrer" className="nav-kct-logo-wrap">
+            <img src={kctLogo} alt="KCT Logo" className="nav-kct-logo" />
+            <span className="nav-kct-text">Kumaraguru College<br/>of Technology</span>
           </a>
         </div>
 

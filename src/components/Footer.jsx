@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import kctLogo from '../assets/KCT.png';
 
 const InstagramIcon = ({ size = 24, className = "" }) => (
   <svg 
@@ -31,7 +32,7 @@ const Footer = () => {
           <div className="footer-logos">
             <h2 className="footer-tedx"><span className="ted-red">TEDx</span>KCT</h2>
             <div className="footer-kct-logo">
-              <img src="./KCT.png" alt="KCT Logo" />
+              <img src={kctLogo} alt="KCT Logo" />
               <span>Kumaraguru College of Technology</span>
             </div>
           </div>
