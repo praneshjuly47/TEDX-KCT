@@ -39,9 +39,6 @@ const Navbar = () => {
           <a href="#speakers" onClick={() => setMobileMenuOpen(false)}>Speakers</a>
           <a href="#schedule" onClick={() => setMobileMenuOpen(false)}>Schedule</a>
           <a href="#footer" onClick={() => setMobileMenuOpen(false)}>Contact</a>
-          <a href="./agenda.pdf" download onClick={() => setMobileMenuOpen(false)} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-            <Download size={16} /> Download Agenda
-          </a>
           <a href="https://www.ted.com/tedx/events/61551" target="_blank" rel="noreferrer" className="btn nav-register-btn">Register Now</a>
         </div>
 
