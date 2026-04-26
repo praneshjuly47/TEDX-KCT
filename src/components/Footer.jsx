@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="footer-logos">
             <h2 className="footer-tedx"><span className="ted-red">TEDx</span>KCT</h2>
             <div className="footer-kct-logo">
-              <img src={`${import.meta.env.BASE_URL}KCT.png`} alt="KCT Logo" />
+              <img src="./KCT.png" alt="KCT Logo" />
               <span>Kumaraguru College of Technology</span>
             </div>
           </div>

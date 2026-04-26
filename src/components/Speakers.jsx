@@ -26,7 +26,7 @@ const speakersData = [
     id: 4,
     name: 'Arvind Sundararajan',
     title: 'Contemporary Artist',
-    image: `${import.meta.env.BASE_URL}speakers/Arvind.jpg`,
+    image: './speakers/Arvind.jpg',
     bio: 'Arvind Sundararajan explores the intersection of Mathematics and Art. His work delves into how analytical thinking can inspire deeply creative visual expressions.',
     instagram: 'http://instagram.com/i_arvindsundar/'
   },
@@ -34,7 +34,7 @@ const speakersData = [
     id: 7,
     name: 'Stanly Johny',
     title: 'International Affairs Editor - The Hindu',
-    image: `${import.meta.env.BASE_URL}speakers/Stanly.jpg`,
+    image: './speakers/Stanly.jpg',
     bio: 'Dr. Stanly Johny unravels "Viral Truths" and the complexity of global affairs in an era of information overload and geopolitical uncertainty.',
     instagram: 'https://www.instagram.com/stanlyjohnym/'
   },
@@ -42,7 +42,7 @@ const speakersData = [
     id: 2,
     name: 'Nibha Namboodiri',
     title: 'Conservationist - Ecology & Culture Systems Practitioner',
-    image: `${import.meta.env.BASE_URL}speakers/Nibha.jpg`,
+    image: './speakers/Nibha.jpg',
     bio: 'Nibha Namboodiri is a cultural practitioner and conservationist discussing the concept of "Inner Boundaries" and our relationship with the natural world.',
     instagram: 'https://www.instagram.com/nibhanamboodiri/'
   },
@@ -50,7 +50,7 @@ const speakersData = [
     id: 3,
     name: 'Sabari Venkat Sreenivas',
     title: 'National Awardee - Creativity',
-    image: `${import.meta.env.BASE_URL}speakers/Sabari.jpg`,
+    image: './speakers/Sabari.jpg',
     bio: 'Mr. Sabari Venkat is a disability rights advocate whose life story exemplifies resilience and overcoming seemingly insurmountable odds.',
     instagram: 'https://www.instagram.com/sabarivenkat_s/'
   },
@@ -58,7 +58,7 @@ const speakersData = [
     id: 6,
     name: 'Sanjay Molur',
     title: 'Executive Director - Zoo Outreach Organisation',
-    image: `${import.meta.env.BASE_URL}speakers/Sanjay.jpg`,
+    image: './speakers/Sanjay.jpg',
     bio: 'Dr. Sanjay Molur is a conservation biologist focusing on species survival and discussing "Nature at the Edge" in our rapidly changing ecosystem.',
     instagram: 'https://www.instagram.com/sanjay.molur/'
   },
@@ -66,7 +66,7 @@ const speakersData = [
     id: 1,
     name: 'Radhika Shapoorjee',
     title: 'Co-Founder, Mediation Mantras',
-    image: `${import.meta.env.BASE_URL}speakers/Radhika.jpg`,
+    image: './speakers/Radhika.jpg',
     bio: 'Radhika Shapoorjee explores the "Trust Dividend" in a volatile world, highlighting how authentic communication builds resilient organizations.',
     instagram: 'https://www.instagram.com/rshapoorjee/'
   },
@@ -74,7 +74,7 @@ const speakersData = [
     id: 5,
     name: 'Narthaki Nataraj',
     title: 'Member State Planning Commission',
-    image: `${import.meta.env.BASE_URL}speakers/Narthaki.jpg`,
+    image: './speakers/Narthaki.jpg',
     bio: 'Dr. Narthaki Nataraj is a celebrated Bharatanatyam dancer and social advocate. She speaks on maintaining discipline and grace amidst chaos and societal challenges.',
     instagram: 'https://www.instagram.com/narthakinataraj/'
   }

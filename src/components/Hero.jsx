@@ -95,7 +95,7 @@ const Hero = () => {
           {[...Array(2)].map((_, i) => (
             <div className="marquee-content" key={i}>
               {['Radhika', 'Nibha', 'Sabari', 'Arvind', 'Narthaki', 'Sanjay', 'Stanly'].map((name, index) => (
-                <img src={`${import.meta.env.BASE_URL}speakers/${name}.jpg`} alt={name} key={`${i}-${index}`} className="marquee-img" />
+                <img src={`./speakers/${name}.jpg`} alt={name} key={`${i}-${index}`} className="marquee-img" />
               ))}
             </div>
           ))}
