@@ -157,3 +157,21 @@
     transform: translateY(-9px) rotate(-45deg);
   }
 }
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1.5rem;
+  }
+  .nav-logos {
+    gap: 0.8rem;
+  }
+  .nav-tedx-logo {
+    font-size: 1.2rem;
+  }
+  .nav-kct-logo {
+    height: 28px;
+  }
+  .nav-divider {
+    height: 20px;
+  }
+}
